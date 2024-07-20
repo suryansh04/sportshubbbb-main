@@ -54,7 +54,7 @@ const logLiveMatchScores = (matches) => {
 const fetchData = async () => {
   try {
     const response = await fetch(
-      "https://api.cricapi.com/v1/cricScore?apikey=18dccd2c-f080-4ed8-8860-0ede56df3b59"
+      "https://api.cricapi.com/v1/cricScore?apikey=27404da8-42ea-4164-8d23-e84355018199"
     );
     const data = await response.json();
     return data.data;
