@@ -30,7 +30,7 @@ const updateTeamInfo = (team1, score1, team2, score2) => {
 
 const logLiveMatchScores = (matches) => {
   matches.forEach((match) => {
-    if (match.ms === "live") {
+    if (match.ms === "live" || match.ms === "result") {
       const team1 = match.t1.split("[")[0].trim();
       const team2 = match.t2.split("[")[0].trim();
       const score1 = match.t1s;
@@ -76,5 +76,5 @@ const updateScores = async () => {
   }
 };
 
-setInterval(updateScores, 30000);
+// setInterval(updateScores, 30000);
 updateScores();
